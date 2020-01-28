@@ -1,26 +1,32 @@
 {
-  "name": "package",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Ashley Kekona <56838258+akekona8@users.noreply.github.com>",
-  "license": "MIT",
+  "name": "api-solo-project",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "dev": "nodemon server/index.js",
-    "start": "node server/index.js",
-    "test": "mocha spec && yarn lint"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./app.js",
+    "test": "(dropdb --if-exists test-hsk_vocab && createdb test-hsk_vocab) && NODE_ENV=test mocha spec/spec.js",
+    "migrate": "knex migrate:latest --knexfile scripts/knexfile.js",
+    "rollback": "knex migrate:rollback --knexfile scripts/knexfile.js ",
+    "seed": "knex seed:run --knexfile scripts/knexfile.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.6.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.0.0",
-    "nodemon": "^2.0.2",
-    "prettier": "^1.19.1"
-  },
-  "dependencies": {
     "chai-http": "^4.3.0",
-    "express": "^4.17.1",
-    "express-generator": "^4.16.1",
-    "express-graphql": "^0.9.0",
-    "graphql": "^14.5.8",
-    "knex": "^0.20.8"
+    "knex": "^0.20.8",
+    "mocha": "^7.0.1",
+    "nodemon": "^2.0.2",
+    "pg": "^7.17.1",
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2"
   }
 }

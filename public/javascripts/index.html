@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <title>HSK Vocabulary API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <style></style>
+  </head>
+
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand"></div>
+    </nav>
+    <main>
+      <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              HSK Vocabulary API
+            </h1>
+            <h2 class="subtitle">
+              This was created during my time as a student at Code Chrysalis
+            </h2>
+            <h2 class="link-to-github">
+              <a href="url">https://github.com/akekona8/API-solo-project.git</a>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="hero-body">
+        <h1><strong>Endpoints:</strong> localhost5000/api/vocab</h1>
+        <div class="content">
+          <ol type="I">
+            <li>
+              GET: All vocab "/", By id "/id=:id", By HSK level category
+              "/level=:level"
+            </li>
+            <li>POST: "/"</li>
+            <li>PUT: "/:id",</li>
+            <li>DELETE: "/:id"</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
