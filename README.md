@@ -1,4 +1,4 @@
-# API-solo-project
+# Learning Chinese with APIs
 
 ### This was created during my time as a student at Code Chrysalis
 
