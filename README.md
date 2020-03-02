@@ -4,8 +4,6 @@
 
 <!-- Add image of database diagram (with relations) -->
 
-Git Hub: https://github.com/akekona8/API-solo-project.git
-
 ## HSK Vocabulary Words (Learning Chinese with APIs)
 
 This repository explore the use of a CRUD API used to store and manipulate vocabulary words from the Hanyu Shuiping Kaoshi, Chinese literary language examiniation.
