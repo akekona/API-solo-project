@@ -6,7 +6,7 @@
 
 ## HSK Vocabulary Words (Learning Chinese with APIs)
 
-This repository explore the use of a CRUD API used to store and manipulate vocabulary words from the Hanyu Shuiping Kaoshi, Chinese literary language examiniation.
+This repository explores the use of a CRUD API used to store and manipulate vocabulary words from the Hanyu Shuiping Kaoshi, Chinese literary language examination.
 
 ### Database schema
 
