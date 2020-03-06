@@ -1,6 +1,6 @@
 # Learning Chinese with APIs
 
-### This was created during my time as a student at Code Chrysalis
+This was created during my time as a student at Code Chrysalis
 
 <!-- Add image of database diagram (with relations) -->
 
